@@ -1,0 +1,112 @@
+:root{
+    --background: #202123;
+    --chatBackground: #343541;
+    --fontColor: #e8e8e8;
+    --details: #484954;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+
+body{
+    background-color: var(--background);
+    color: var(--fontColor);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+}
+
+.box-question{
+    background-color: var(--chatBackground);
+    margin-top: 3rem;
+    color: var(--fontColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    max-height: 800px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.header{
+    height: 4rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 2px solid var(--details);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    border-top: 2px solid var(--details);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 60%;
+    background: var(--details);
+    height: 40px;
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    color: var(--fontColor);
+    font-size: 16px;
+    outline: none;
+}
+
+#btn-submit{
+    background-color: var(--details);
+    color: var(--fontColor);
+    margin: 0 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#historic{
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.box-my-message{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.my-message{
+    text-align: right;
+    background-color: #63646a;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.box-response-message{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.response-message{
+    text-align: left;
+    background-color: #2a2a2b;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
